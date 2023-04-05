@@ -10,9 +10,9 @@ COMP-3150 Database Management Systems Course Final Project - Hospital Database S
 
 #### Run Python Script
 ```bash
-git clone https://github.com/gabrielrueda/hospital-database-system-comp-3150.git
+git clone https://github.com/Mork7/HospitalDatabase.git
 
-cd hospital-database-system-comp-3150
+cd HospitalDatabase
 
 python -m pip install mysql-connector-python 
 
