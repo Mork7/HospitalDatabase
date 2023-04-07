@@ -22,14 +22,14 @@ from actions_3 import treatPatient
 
 
 user = input("User Name:")
-
+DB = input("Database: ")
 password = getpass.getpass()
 
 mydb = mysql.connector.connect(
-    host="localhost",
-    user=user,
-    password=password,
-    database="HOSPITAL_DB"
+    host = "localhost",
+    user = user,
+    password = password,
+    database = DB
 )
 
 # make sure your function is stated in the dictionary below:
@@ -75,9 +75,7 @@ menu = {
         },
 }
 
-
 opt = 1
-
 
 while(opt != 0):
     print("---\nACTIONS: \n0) Exit")
@@ -93,6 +91,5 @@ while(opt != 0):
         print(e)
     myCursor.close()
     time.sleep(1)
-
 
 mydb.close()
