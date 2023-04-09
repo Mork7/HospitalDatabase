@@ -117,7 +117,7 @@ def nurseProfile(myCursor, fName, lName, empID=None):
 def getBillsHospital(myCursor):
 
     hospitalName = input("From which hospital would you like to retrieve bills due?\n \
-                         Options are, Ouellette, Grace, and Metropolitan:\n")
+    Options are, Ouellette, Grace, and Metropolitan:\n")
 
     myCursor.execute(f'''SELECT hb.BillNO, hb.PrescriptionName, hb.Amount, p.PharmacyName
                     FROM HospitalBills as hb 
